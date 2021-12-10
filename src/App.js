@@ -1,10 +1,16 @@
 import "./styles.css";
-
+import Button from "@mui/material/Button";
+import UploadIcon from "@mui/icons-material/Upload";
 export default function App() {
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+      <Button variant="text">Text</Button>
+      <Button variant="contained">Text</Button>
+      <Button>Text</Button>
+      <Button variant="outlined">Text</Button>
+      <Button startIcon={<UploadIcon />} size="large" variant="contained">
+        Text
+      </Button>
     </div>
   );
 }
